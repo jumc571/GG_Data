@@ -90,11 +90,11 @@ def main():
 
     today = date.today().strftime("%Y-%m-%d")
     print("Today's date:", today)
-    q = f"SELECT * FROM df WHERE [data_datetime] like '{today}%'"
+    # q = f"SELECT * FROM df WHERE [data_datetime] like '{today}%'"
     # q = f"SELECT * FROM df WHERE [data_datetime] like '2023-03-19%'"
-    scope = locals()
-    df = sqldf.run(q, scope)
-    df = df.drop('index', axis='columns')
+    # scope = locals()
+    # df = sqldf.run(q, scope)
+    # df = df.drop('index', axis='columns')
     print(df)
 
     if df.empty == False:
