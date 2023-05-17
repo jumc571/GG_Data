@@ -19,8 +19,6 @@ from sqlalchemy import URL
 from datetime import date
 from email import encoders
 # from pandasql import sqldf
-
-import pandas as pd
 # from pandas import DataFrame as df
 from sqlalchemy import text
 
@@ -37,7 +35,6 @@ fileConfig(logging_config_path, disable_existing_loggers=False)
 log = logging.getLogger()
 
 def main():
-    import sqldf
 
     conn_str = 'DRIVER={SQL Server};Server=DESKTOP-UB80N6S;Database=Staging;Trusted_Connection=True;'
     # cnxn = pyodbc.connect(conn_str)
